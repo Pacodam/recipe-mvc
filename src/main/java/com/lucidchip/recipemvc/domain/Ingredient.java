@@ -1,5 +1,6 @@
 package com.lucidchip.recipemvc.domain;
 
+import javax.lang.model.type.UnionType;
 import javax.persistence.*;
 import java.math.BigDecimal;
 
@@ -59,4 +60,8 @@ public class Ingredient {
     }
 
     public void setRecipe(Recipe recipe) { this.recipe = recipe;}
+
+    public void setUom(UnitOfMeasure uom){ this.uom = uom;}
+
+    public UnitOfMeasure getUom(){ return uom;}
 }
